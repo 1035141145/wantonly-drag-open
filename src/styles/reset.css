@@ -1,0 +1,55 @@
+body,
+button,
+input,
+p,
+li,
+ol,
+ul,
+div,
+section,
+article,
+td,
+th,
+span,
+textarea,
+form,
+footer,
+header,
+nav,
+main,
+address,
+aside,
+pre,
+canvas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+/* 定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸 */
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* 定义滚动条轨道
+  内阴影+圆角 */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* 定义滑块
+  内阴影+圆角 */
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #ddd;
+}

@@ -1,0 +1,175 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: "Microsoft Yahei",sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.text_center{
+    text-align: center;
+}
+.text_left{
+    text-align: left;
+}
+.text_right{
+    text-align: right;
+}
+.ver_align{
+   vertical-align: middle;
+}
+.rflex{
+    display: flex;
+    flex-direction: row;
+}
+.cflex{
+    display: flex;
+    flex-direction: column;
+}
+.wflex{
+    flex:1;
+}
+
+
+// 公共的color
+$left-bgColor:#2a3542;  // 左侧菜单背景颜色;
+
+
+
+//页面的公共样式
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.el-table .odd-row {
+   background:#eaefea;
+}
+.el-table .even-row {
+   background: #d9e6f1;
+}
+
+.fillcontain{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.fillcontainer{
+    width:100%;
+    text-align:center;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.tabContainer{
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 2px;
+}
+.echartsPosition{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #FF6C60;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.shareItem{
+    .shareArea{
+      margin-right: 30px;
+      flex:1;
+      .shareTitle{
+        border-left: 4px solid #a9d86e;
+      }
+    }
+    .sharelast{
+      margin-right: 0;
+    }
+  }
+
+  .saleColor{
+    color:$saleColor;
+  }
+  .taxColor{
+    color:$taxColor;
+  }
+  .extenedColor{
+    color: $extenedColor;
+  }
+  .likeColor{
+    color: $likeColor;
+  }
+  .saleBgcolor{
+    background:$saleColor;
+  }
+  .taxBgcolor{
+    background: $taxColor;
+  }
+  .extenedBgcolor{
+    background: $extenedColor;
+  }
+  .likeBgcolor{
+    background: $likeColor;
+  }
+  .linkBgColor{
+    background: $linkColor;
+  }
+  .keleBgColor{
+    background: $keleColor;
+  }
+
+
