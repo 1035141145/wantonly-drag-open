@@ -48,7 +48,14 @@
 1. 详细的文档
 
 ### 演示图片
-![Image text](你刚复制的图片地址)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204205.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204243.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204325.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204350.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204409.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204422.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204543.png)
+
 
 
 ### 优势
