@@ -1,4 +1,5 @@
 
+
 ### 企业级低代码数据可视化大屏解决方案
 
 ### 简介
@@ -10,6 +11,7 @@
 * [体验地址](http://wantonly-drag.com.cn/)
 * [文档地址](http://wantonly-drag.com.cn/doc/)
 
+#### 体验账号：123456@qq.com 密码:123456
 
 ### 主要功能
 
@@ -55,6 +57,12 @@
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204409.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204422.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204543.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q1.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q2.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q3.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q4.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q5.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q6.png)
 
 
 
