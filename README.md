@@ -9,6 +9,8 @@
 
 [wantonly-drag](http://wantonly-drag.com.cn)企业级数据可视化解决方案
 
+[gitee](https://gitee.com/wei_feng_qin/wantonly-drag-open) 跳转国内gitee查看
+[github](https://github.com/1035141145/wantonly-drag-open) 跳转国外github查看
 ### 声明
 开源部分为基础模块，仅拥有编辑器的的部分功能，适合学习和自行拓展开发，如果对您有帮助希望点个star。
 
