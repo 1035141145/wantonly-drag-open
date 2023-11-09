@@ -10,7 +10,7 @@
                 v-show="sidebar.opened"
                 :style="{ color: menuObj.textColor }"
                 class="title"
-            >简历管理后台</span>
+            >管理后台</span>
         </div>
         <div class="menu_page_bottom is-scroll-left" :style="{ background: menuObj.bgColor }">
             <el-menu
@@ -282,10 +282,124 @@ export default {
             return '/' + item.path + '/' + citem.path
         },
         getMenusList() {
-            getMenusList().then((res) => {
-                this.menuList = res.data
-                console.log(res.data)
-            })
+            // getMenusList().then((res) => {
+            //     this.menuList = res.data
+            //     console.log(res.data)
+            // })
+            this.menuList = [
+                {
+                    id: 27,
+                    name: '首页',
+                    fid: 0,
+                    path: 'index/index',
+                    level: 0,
+                    mark: '',
+                    sort: 0,
+                    _showChildren: true,
+                    children: [],
+                },
+                {
+                    id: 42,
+                    name: '自定义看板',
+                    fid: 0,
+                    path: 'dragHome/index',
+                    level: 0,
+                    mark: '',
+                    sort: 0,
+                    _showChildren: true,
+                    children: [],
+                },
+                {
+                    id: 1,
+                    name: '用户与权限管理',
+                    fid: 0,
+                    path: 'userManager',
+                    level: 0,
+                    mark: '权限管理',
+                    sort: 1,
+                    _showChildren: true,
+                    children: [
+                        {
+                            id: 14,
+                            name: '权限栏目列表',
+                            fid: 1,
+                            path: 'accessList',
+                            level: 1,
+                            mark: '权限列表',
+                            sort: 1,
+                            _showChildren: true,
+                            children: [],
+                        },
+                        {
+                            id: 15,
+                            name: '角色管理',
+                            fid: 1,
+                            path: 'roleList',
+                            level: 1,
+                            mark: '角色列表',
+                            sort: 2,
+                            _showChildren: true,
+                            children: [],
+                        },
+                        {
+                            id: 17,
+                            name: '用户管理',
+                            fid: 1,
+                            path: 'userList',
+                            level: 1,
+                            mark: 'fdsfs',
+                            sort: 3,
+                            _showChildren: true,
+                            children: [],
+                        },
+                    ],
+                },
+                {
+                    id: 35,
+                    name: '错误页面',
+                    fid: 0,
+                    path: 'sdfs',
+                    level: 0,
+                    mark: '',
+                    sort: 6,
+                    _showChildren: true,
+                    children: [
+                        {
+                            id: 36,
+                            name: '401',
+                            fid: 35,
+                            path: 'sdfs',
+                            level: 1,
+                            mark: '',
+                            sort: 1,
+                            _showChildren: true,
+                            children: [],
+                        },
+                        {
+                            id: 37,
+                            name: '404',
+                            fid: 35,
+                            path: 'sfsd',
+                            level: 1,
+                            mark: '',
+                            sort: 2,
+                            _showChildren: true,
+                            children: [],
+                        },
+                    ],
+                },
+                {
+                    id: 38,
+                    name: '日志列表',
+                    fid: 0,
+                    path: 'log/index',
+                    level: 0,
+                    mark: '日志记录',
+                    sort: 7,
+                    _showChildren: true,
+                    children: [],
+                },
+            ]
         },
     },
 }

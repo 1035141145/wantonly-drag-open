@@ -4,7 +4,7 @@
             <section class="form_contianer">
                 <div class="titleArea rflex">
                     <img class="logo" :src="logo" alt="admin" />
-                    <span class="title"><i>简历管理后台</i></span>
+                    <span class="title"><i>低代码数据可视化</i></span>
                 </div>
                 <el-form
                     ref="loginForm"

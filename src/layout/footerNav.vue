@@ -1,11 +1,11 @@
 <template>
     <div class="footer">
         <p class="intro rflex">
-            <span>作者：覃伟锋</span>
+            <span>作者: THESHY</span>
             <a :href="github" target="_blank">
                 <icon-svg icon-class="iconGithub" />
             </a>
-            <span>联系方式：13772198285</span>
+            <span>联系方式：13888888888</span>
         </p>
         <p class="beian">努力奋斗的前端开发工程师</p>
     </div>

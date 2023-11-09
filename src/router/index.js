@@ -78,44 +78,6 @@ const router = new Router({
             ],
         },
         {
-            path: '/resumeManage',
-            name: 'resumeManage',
-            meta: {
-                title: '简历管理',
-                icon: 'iconpay3',
-            },
-            component: Layout,
-            children: [
-                {
-                    path: 'skillList',
-                    name: 'skillList',
-                    meta: {
-                        title: '个人技能管理',
-                        routerType: 'leftmenu',
-                    },
-                    component: () => import('@/page/resume/skillList/skillList'),
-                },
-                {
-                    path: 'projectShow',
-                    name: 'projectShow',
-                    meta: {
-                        title: '项目展示',
-                        routerType: 'leftmenu',
-                    },
-                    component: () => import('@/page/resume/projectShow/projectShow'),
-                },
-                {
-                    path: 'resumeHome',
-                    name: 'resumeHome',
-                    meta: {
-                        title: '简历主页管理',
-                        routerType: 'leftmenu',
-                    },
-                    component: () => import('@/page/resume/resumeHome/resumeHome'),
-                },
-            ],
-        },
-        {
             path: '/error',
             component: Layout,
             name: 'errorPage',
@@ -189,12 +151,12 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
     const token = window.sessionStorage.getItem('Token')
     console.log('xxxxxxxxxxxxxxxx', to)
-    // next();
-    if (!token && to.name != 'login') {
-        next({ name: 'login' })
-    } else {
-        next()
-    }
+    next()
+    // if (!token && to.name != 'login') {
+    //     next({ name: 'login' })
+    // } else {
+    //     next()
+    // }
 })
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location, onResolve, onReject) {

@@ -50,7 +50,14 @@
 1. 详细的文档
 
 ### 演示图片
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204205.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/1.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/2.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/3.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/4.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/5.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/6.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/7.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/8.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204243.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204325.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204350.png)
