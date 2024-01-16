@@ -1,11 +1,20 @@
 
 
-### 企业级低代码数据可视化大屏解决方案
+### 企业级低代码数字孪生、数据可视化大屏解决方案
 
 ### 简介
-本项目为一个低代码数据可视化大屏平台，简单的拖拉拽就可以生成精美的看板。前端基于vue.js后端基于nodejs + express + mongodb。
+本项目为一个低代码数据可视化大屏平台，简单的拖拉拽就可以生成精美的看板。前端主要基于vue.js + echarts + threejs后端主要基于nodejs + express + mongodb。
 项目主要解决企业可视化大屏**开发过程繁琐**、**开发成本高**、**维护成本高**等问题。根据多年经验，企业花了大精力开发的大屏会随着生产的变化导致维护困难等原因
 最终都停止维护，变成了**面子工程**，wantonly-drag能完美解决这些问题，助推企业数字化转型。
+
+### 2024-1-1新增二维与三维一体的数字孪生解决方案
+**项目新增二维与三维一体的数字孪生解决方案，支持零代码配置webgl数字孪生场景，极具创新性的设计，支持将原有的任意二维组件嵌入三维场景中,区别于业界平台更注重在web建模以及需要高昂的投入成本和学习成本，而我们更注重对模型交互设计，让建模交给专业建模人员，而设计人员只关注模型组合排布后期处理、三维与二维场景交互设计，轻松设计完成一个数字孪生场景**
+## 孪生教程
+  ![image](https://github.com/1035141145/wantonly-drag-open/assets/129241551/1e30506c-b076-41f6-b0d4-5b6341cd0430)
+  ![image](https://github.com/1035141145/wantonly-drag-open/assets/129241551/a45f1ff9-a9d0-4cf8-a76f-a73c55a1b242)
+  ![image](https://github.com/1035141145/wantonly-drag-open/assets/129241551/26557eaa-ccef-4590-9f4f-aaa476f61563)
+  ![image](https://github.com/1035141145/wantonly-drag-open/assets/129241551/50e738d2-1beb-47d3-ad1d-43a79834ebe7)
+
 
 [wantonly-drag](http://wantonly-drag.com.cn)企业级数据可视化解决方案
 
