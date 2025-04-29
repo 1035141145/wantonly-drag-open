@@ -16,6 +16,8 @@
 
 [onetwin](http://onetwin.cn) **壹孪** 是项目的全新重构版本，采用最新的技术，提供更加流畅的性能、更美的 UI 和更好的交互体验。
 
+个人项目，完全自己一个人独立自主开发，招合作伙伴，招投资，如果您看好这个项目，我们能有可能得一切合作模式。
+
 ## 开源地址
 
 *   [gitee](https://gitee.com/wei_feng_qin/wantonly-drag-open) 跳转国内 gitee 查看
