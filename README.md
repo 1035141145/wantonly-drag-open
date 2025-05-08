@@ -32,11 +32,12 @@
 
 ## 官方地址
 
-*   [体验地址](http://wantonly-drag.com.cn/)
+*   [体验地址](http://wantonly-drag.com.cn/) --旧版本
+*   [体验地址](http://onetwin.cn/) --新版本
 *   [文档地址](http://wantonly-drag.com.cn/doc/)
 
-#### 体验账号：123456@qq.com 密码:123456
-
+#### 体验账号（旧版本）：123456@qq.com 密码:123456
+#### 体验账号（新版本）：test 密码:123456
 ## B站演示视频地址
 
 [https://www.bilibili.com/video/BV1t48ue3ErW/?vd_source=0f99e4f7b7ed463ff254557a691d536a](https://www.bilibili.com/video/BV1t48ue3ErW/?vd_source=0f99e4f7b7ed463ff254557a691d536a)
