@@ -14,7 +14,7 @@
 
 # **全新重构版本：壹孪**   http://onetwin.cn
 
-## [onetwin](http://onetwin.cn) **壹孪** 是项目的全新重构版本，采用最新的技术，提供更加流畅的性能、更美的 UI 和更好的交互体验，用户数据独立，免费使用。
+## [onetwin](http://onetwin.cn) **壹孪** 是项目的全新重构版本，采用最新的技术vue3+vite+elementplus+pinia，提供更加流畅的性能、更美的 UI 和更好的交互体验，用户数据独立，免费使用。
 
 ### 个人项目，完全自己一个人独立自主开发，招合作伙伴，招投资，如果您看好这个项目，我们能有可能得一切合作模式。
 
@@ -78,7 +78,16 @@
 1. 所有组件支持三维空间转换
 1. 详细的文档
 
-### 演示图片
+### 演示图片（新版本） http://onetwin.cn
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new1.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new2.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new3.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new4.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new5.png)
+![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new6.png)
+
+
+### 演示图片（旧版本）
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/1.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/2.png)
 ![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/3.png)
