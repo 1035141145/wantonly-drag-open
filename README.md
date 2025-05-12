@@ -8,11 +8,11 @@
 
 ## 版本信息
 
-### 旧版本：wantonly-drag
+### 旧版本：wantonly-drag    http://wantonly-drag.com.cn
 
 [wantonly-drag](http://wantonly-drag.com.cn) 企业级数据可视化解决方案
 
-# **全新重构版本：壹孪**
+# **全新重构版本：壹孪**   http://onetwin.cn
 
 ## [onetwin](http://onetwin.cn) **壹孪** 是项目的全新重构版本，采用最新的技术，提供更加流畅的性能、更美的 UI 和更好的交互体验，用户数据独立，免费使用。
 
