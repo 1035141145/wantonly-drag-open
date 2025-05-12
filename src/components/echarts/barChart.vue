@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import echarts from 'echarts'
 import echartsTheme from './theme/westeros.json'
 import { countMonthly, regMonthly } from '@/api/user'
 
@@ -33,11 +32,11 @@ export default {
         getcountMonthly() {
             countMonthly({}).then((res) => {
                 const thisData = res.data
-                thisData.forEach(item => {
+                thisData.forEach((item) => {
                     const x = item._id.year + '年' + item._id.month + '月'
                     this.x_List.push(x)
                     const y = item.count
-                    this.Visits.push(y)         
+                    this.Visits.push(y)
                     this.getregMonthly()
                 })
             })
@@ -45,25 +44,22 @@ export default {
         getregMonthly() {
             regMonthly({}).then((res) => {
                 const thisData = res.data
-                thisData.forEach(item => {
-                    const x = item._id.year + '年' + item._id.month + '月'        
+                thisData.forEach((item) => {
+                    const x = item._id.year + '年' + item._id.month + '月'
                     const y = item.count
                     this.x_List.forEach((element, index) => {
                         if (element == x) {
                             this.Downloads[index] = y
-                        }           
-                    })         
+                        }
+                    })
                 })
                 this.loadChart()
             })
         },
         loadChart() {
             this.$nextTick(() => {
-                echarts.registerTheme('westeros', echartsTheme)
-                this.myChart = echarts.init(
-                    document.getElementById(this.id),
-                    'westeros',
-                )
+                this.$echarts.registerTheme('westeros', echartsTheme)
+                this.myChart = this.$echarts.init(document.getElementById(this.id), 'westeros')
                 this.myChart.setOption(this.initOption())
             })
         },
@@ -117,5 +113,4 @@ export default {
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

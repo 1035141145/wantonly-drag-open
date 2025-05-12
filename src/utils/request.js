@@ -1,3 +1,4 @@
+// 全局动态请求，适用与只有一个请求
 import { Message } from 'element-ui'
 
 export const urlRE = /(https?):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/
@@ -71,14 +72,14 @@ export default function requestWarpper(options, obj, key, responseType = 'object
     if (url && !/^\d+$/.test(url) || urlRE.test(getURL(url))) {
         if (!options.series) {
             request(options, responseType)
-            .then(data => {
-                if (responseType === 'object' || responseType === 'array') {
-                    obj[key] = JSON.parse(data)
-                } else {
-                    obj[key] = data
-                }
-            })
-            .catch(err => Message.error(err?.message || err))
+                .then(data => {
+                    if (responseType === 'object' || responseType === 'array') {
+                        obj[key] = JSON.parse(data).data
+                    } else {
+                        obj[key] = JSON.parse(data).data
+                    }
+                })
+                .catch(err => Message.error(err?.message || err))
         } else {
             timer = setInterval(() => {
                 if (options.requestCount != 0 && options.requestCount <= count) {
@@ -88,14 +89,14 @@ export default function requestWarpper(options, obj, key, responseType = 'object
 
                 count++
                 request(options, responseType)
-                .then(data => {
-                    if (responseType === 'object' || responseType === 'array') {
-                        obj[key] = JSON.parse(data)
-                    } else {
-                        obj[key] = data
-                    }
-                })
-                .catch(err => Message.error(err?.message || err))
+                    .then(data => {
+                        if (responseType === 'object' || responseType === 'array') {
+                            obj[key] = JSON.parse(data).data
+                        } else {
+                            obj[key] = JSON.parse(data).data
+                        }
+                    })
+                    .catch(err => Message.error(err?.message || err))
             }, options.time)
         }
     }

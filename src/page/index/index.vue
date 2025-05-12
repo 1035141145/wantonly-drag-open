@@ -64,7 +64,7 @@
                 <bar-chart type="barChart" />
             </el-col>
         </el-row>
-    <!-- <el-row :gutter="10" class="row_list order_list">
+        <!-- <el-row :gutter="10" class="row_list order_list">
       <el-col :span="7">
         <pie-chart type="ordertype" />
       </el-col>
@@ -121,7 +121,7 @@ export default {
                 totaltoday: 0,
             },
             loginTatal: 0,
-            loginTatalToday: 0,           
+            loginTatalToday: 0,
         }
     },
     created() {},
@@ -133,7 +133,7 @@ export default {
         }, 1000)
     },
     methods: {
-    // 获取用户统计
+        // 获取用户统计
         getusercount() {
             usercount({}).then((res) => {
                 this.totalList = res.data
@@ -145,67 +145,67 @@ export default {
 
 <style lang="scss" scoped>
 .data_section {
-  margin: 20px;
-  border-radius: 2px;
-  .row_list {
-    margin-bottom: 20px;
-    .row_base {
-      padding: 10px;
-      box-sizing: border-box;
-      background: #fff;
-      border-radius: 6px;
-      height: 120px;
+    margin: 20px;
+    border-radius: 2px;
+    .row_list {
+        margin-bottom: 20px;
+        .row_base {
+            padding: 10px;
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 6px;
+            height: 120px;
+        }
     }
-  }
-  .order_list {
-    .orderArea {
-      width: 100%;
-      height: 00px;
-      background: #fff !important;
-      border-radius: 6px;
-      box-sizing: border-box;
-      padding: 10px;
-      padding-top: 40px;
-      overflow: hidden;
+    .order_list {
+        .orderArea {
+            width: 100%;
+            height: 00px;
+            background: #fff !important;
+            border-radius: 6px;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-top: 40px;
+            overflow: hidden;
+        }
+        .orderbarArea {
+            height: 570px;
+        }
     }
-    .orderbarArea {
-      height: 570px;
+    .data_list {
+        text-align: center;
+        font-size: 14px;
+        border-radius: 6px;
+        padding: 10px;
+        color: #fff;
+        height: 80px;
+        .leftItem {
+            align-items: start;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .rightItem {
+            width: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .svg-icon {
+                font-size: 30px;
+            }
+        }
+        .number {
+            font-size: 22px;
+            font-weight: bold;
+            .perTitle {
+                font-size: 13px;
+                margin-left: 5px;
+            }
+        }
     }
-  }
-  .data_list {
-    text-align: center;
-    font-size: 14px;
-    border-radius: 6px;
-    padding: 10px;
-    color: #fff;
-    height: 80px;
-    .leftItem {
-      align-items: start;
-      justify-content: space-between;
-      text-align: left;
+    .pay {
+        .leftItem {
+            justify-content: space-around;
+        }
     }
-    .rightItem {
-      width: 62px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .svg-icon {
-        font-size: 30px;
-      }
-    }
-    .number {
-      font-size: 22px;
-      font-weight: bold;
-      .perTitle {
-        font-size: 13px;
-        margin-left: 5px;
-      }
-    }
-  }
-  .pay {
-    .leftItem {
-      justify-content: space-around;
-    }
-  }
 }
 </style>

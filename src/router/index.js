@@ -77,6 +77,7 @@ const router = new Router({
                 },
             ],
         },
+
         {
             path: '/error',
             component: Layout,
@@ -142,6 +143,14 @@ const router = new Router({
                         title: '自定义看板',
                     },
                 },
+                {
+                    path: 'preview',
+                    name: 'preview',
+                    component: () => import('@/page/dragView/preview'),
+                    meta: {
+                        title: '预览',
+                    },
+                },
             ],
         },
         { path: '*', redirect: '/404', hidden: true },
@@ -162,10 +171,10 @@ const originalPush = Router.prototype.push
 Router.prototype.push = function push(location, onResolve, onReject) {
     undefined
     if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
-    return originalPush.call(this, location).catch(err => err)
+    return originalPush.call(this, location).catch((err) => err)
 }
 export default router
-// 	//注册路由
+// 	注册路由
 // export default new Router({
 // 	mode:'history', // 默认为'hash'模式
 // 	base: '/permission/', // 添加跟目录,对应服务器部署子目录

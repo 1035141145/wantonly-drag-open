@@ -5,21 +5,12 @@
 </template>
 
 <style lang="scss">
-@import "@/styles/variables";
-@import "@/styles/element-ui";
-@import "@/styles/common";
-@import "@/styles/scrollBar";
+@import '@/styles/variables';
+@import '@/styles/element-ui';
+@import '@/styles/common';
+@import '@/styles/scrollBar';
 #app {
-    font-family:
-        "Helvetica Neue",
-        Helvetica,
-        Arial,
-        "PingFang SC",
-        "Hiragino Sans GB",
-        "Heiti SC",
-        "Microsoft YaHei",
-        "WenQuanYi Micro Hei",
-        sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;

@@ -26,14 +26,17 @@ const data = {
         ...lock.state,
 
         editMode: 'edit', // 编辑器模式 edit preview
-        canvasStyleData: { // 页面全局数据
-            width: 1200,
-            height: 740,
+        canvasStyleData: {
+            // 页面全局数据
+            width: 1920,
+            height: 1080,
             scale: 100,
             color: '#000',
             opacity: 1,
-            background: '#fff',
+            background: 'rgba(0, 0, 0, 0)',
             fontSize: 14,
+            backgroundColor: '#000',
+            url: '/image/xingkong.png',
         },
         isInEdiotr: false, // 是否在编辑器中，用于判断复制、粘贴组件时是否生效，如果在编辑器外，则无视这些操作
         componentData: [], // 画布组件数据
@@ -42,6 +45,7 @@ const data = {
         // 点击画布时是否点中组件，主要用于取消选中组件用。
         // 如果没点中组件，并且在画布空白处弹起鼠标，则取消当前组件的选中状态
         isClickComponent: false,
+        theme: 'dark', // dark  light
     },
     mutations: {
         ...animation.mutations,

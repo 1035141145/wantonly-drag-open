@@ -1,12 +1,16 @@
 <template>
     <div
         id="editor"
+        :key="canvasStyleData.url"
         class="editor"
         :class="{ edit: isEdit }"
         :style="{
             ...getCanvasStyle(canvasStyleData),
             width: changeStyleWithScale(canvasStyleData.width) + 'px',
             height: changeStyleWithScale(canvasStyleData.height) + 'px',
+            background: canvasStyleData.url ? `url(${canvasStyleData.url})` : canvasStyleData.backgroundColor,
+            'background-size': canvasStyleData.url ? '100% 100%' : '',
+            'background-repeat': canvasStyleData.url ? 'no-repeat' : '',
         }"
         @contextmenu="handleContextMenu"
         @mousedown="handleMouseDown"
@@ -15,61 +19,19 @@
         <Grid />
 
         <!--页面组件列表展示-->
-        <Shape
-            v-for="(item, index) in componentData"
-            :key="item.id"
-            :default-style="item.style"
-            :style="getShapeStyle(item.style)"
-            :active="item.id === (curComponent || {}).id"
-            :element="item"
-            :index="index"
-            :class="{ lock: item.isLock }"
-        >
-            <component
-                :is="item.component"
-                v-if="item.component.startsWith('SVG')"
-                :id="'component' + item.id"
-                :style="getSVGStyle(item.style)"
-                class="component"
-                :prop-value="item.propValue"
-                :element="item"
-                :request="item.request"
-            />
+        <Shape v-for="(item, index) in componentData" :key="item.id" :default-style="item.style" :style="getShapeStyle(item.style)" :active="item.id === (curComponent || {}).id" :element="item" :index="index" :class="{ lock: item.isLock }">
+            <component :is="item.component" v-if="item.component.startsWith('SVG')" :id="'component' + item.id" :style="getSVGStyle(item.style)" class="component" :prop-value="item.propValue" :element="item" :request="item.request" />
 
-            <component
-                :is="item.component"
-                v-else-if="item.component != 'VText'"
-                :id="'component' + item.id"
-                class="component"
-                :style="getComponentStyle(item.style)"
-                :prop-value="item.propValue"
-                :element="item"
-                :request="item.request"
-            />
+            <component :is="item.component" v-else-if="item.component != 'VText'" :id="'component' + item.id" class="component" :style="getComponentStyle(item.style)" :prop-value="item.propValue" :element="item" :request="item.request" />
 
-            <component
-                :is="item.component"
-                v-else
-                :id="'component' + item.id"
-                class="component"
-                :style="getComponentStyle(item.style)"
-                :prop-value="item.propValue"
-                :element="item"
-                :request="item.request"
-                @input="handleInput"
-            />
+            <component :is="item.component" v-else :id="'component' + item.id" class="component" :style="getComponentStyle(item.style)" :prop-value="item.propValue" :element="item" :request="item.request" @input="handleInput" />
         </Shape>
         <!-- 右击菜单 -->
         <ContextMenu />
         <!-- 标线 -->
         <MarkLine />
         <!-- 选中区域 -->
-        <Area
-            v-show="isShowArea"
-            :start="start"
-            :width="width"
-            :height="height"
-        />
+        <Area v-show="isShowArea" :start="start" :width="width" :height="height" />
     </div>
 </template>
 
@@ -97,22 +59,20 @@ export default {
         return {
             editorX: 0,
             editorY: 0,
-            start: { // 选中区域的起点
+            start: {
+                // 选中区域的起点
                 x: 0,
                 y: 0,
             },
             width: 0,
             height: 0,
+            // url: 'http://8.129.212.181:6166/static/img/16397562358144123.jpg',
+            url: '/image/lanse.png',
             isShowArea: false,
             svgFilterAttrs: ['width', 'height', 'top', 'left', 'rotate'],
         }
     },
-    computed: mapState([
-        'componentData',
-        'curComponent',
-        'canvasStyleData',
-        'editor',
-    ]),
+    computed: mapState(['componentData', 'curComponent', 'canvasStyleData', 'editor']),
     mounted() {
         // 获取编辑器元素
         this.$store.commit('getEditor')
@@ -128,7 +88,7 @@ export default {
 
         handleMouseDown(e) {
             // 如果没有选中组件 在画布上点击时需要调用 e.preventDefault() 防止触发 drop 事件
-            if (!this.curComponent || (isPreventDrop(this.curComponent.component))) {
+            if (!this.curComponent || isPreventDrop(this.curComponent.component)) {
                 e.preventDefault()
             }
 
@@ -200,12 +160,14 @@ export default {
 
             // 根据选中区域和区域中每个组件的位移信息来创建 Group 组件
             // 要遍历选择区域的每个组件，获取它们的 left top right bottom 信息来进行比较
-            let top = Infinity, left = Infinity
-            let right = -Infinity, bottom = -Infinity
-            areaData.forEach(component => {
+            let top = Infinity,
+                left = Infinity
+            let right = -Infinity,
+                bottom = -Infinity
+            areaData.forEach((component) => {
                 let style = {}
                 if (component.component == 'Group') {
-                    component.propValue.forEach(item => {
+                    component.propValue.forEach((item) => {
                         const rectInfo = $(`#component${item.id}`).getBoundingClientRect()
                         style.left = rectInfo.left - this.editorX
                         style.top = rectInfo.top - this.editorY
@@ -249,11 +211,11 @@ export default {
             // 区域起点坐标
             const { x, y } = this.start
             // 计算所有的组件数据，判断是否在选中区域内
-            this.componentData.forEach(component => {
+            this.componentData.forEach((component) => {
                 if (component.isLock) return
 
                 const { left, top, width, height } = getComponentRotatedStyle(component.style)
-                if (x <= left && y <= top && (left + width <= x + this.width) && (top + height <= y + this.height)) {
+                if (x <= left && y <= top && left + width <= x + this.width && top + height <= y + this.height) {
                     result.push(component)
                 }
             })
@@ -312,11 +274,11 @@ export default {
 <style lang="scss" scoped>
 .editor {
     position: relative;
-    background: #fff;
+    background: #000;
     margin: auto;
 
     .lock {
-        opacity: .5;
+        opacity: 0.5;
 
         &:hover {
             cursor: not-allowed;

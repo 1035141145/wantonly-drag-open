@@ -31,3 +31,18 @@ const components = ['VText', 'RectShape', 'CircleShape']
 export function isPreventDrop(component) {
     return !components.includes(component) && !component.startsWith('SVG')
 }
+
+/**
+ * 页面等比缩放
+ * @param el 页面根
+ * @param width 设计宽度
+ * @param height 设计高度
+ */
+export const pageScale = (el, width, height) => {
+    const scaleX = document.documentElement.clientWidth / width
+    const scaleY = document.documentElement.clientHeight / height
+    const scale = Math.min(scaleX, scaleY)
+    el.style.transform = `scale(${scale}) translate(-50%)`
+    // const transform = `scale(${scale}) translate(-50%)`
+    // return transform
+}

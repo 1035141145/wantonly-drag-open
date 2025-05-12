@@ -17,20 +17,22 @@
     "src/**/*.{vue,scss,css,sass}": "stylelint --allow-empty-input"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
+    "@jiaminghi/data-view": "^2.10.0",
+    "axios": "^0.19.0",
     "core-js": "^3.8.3",
+    "dayjs": "^1.11.5",
+    "echarts": "^5.3.3",
     "element-ui": "^2.14.1",
     "html-to-image": "^1.9.0",
+    "js-cookie": "^2.2.1",
     "mathjs": "^10.5.3",
     "nanoid": "^4.0.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
-    "vuex": "^3.6.2",
-    "js-cookie": "^2.2.1",
-    "axios": "^0.19.0",
-    "echarts": "^4.2.1"
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "@vue/cli-plugin-babel": "~5.0.0",

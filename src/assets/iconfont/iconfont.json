@@ -1,51 +1,58 @@
 {
-  "id": "2373406",
-  "name": "visual-drag-demo",
+  "id": "3626986",
+  "name": "drag",
   "font_family": "iconfont",
   "css_prefix_text": "icon-",
   "description": "",
   "glyphs": [
     {
-      "icon_id": "6616997",
-      "name": "关闭",
-      "font_class": "guanbi",
-      "unicode": "eca0",
-      "unicode_decimal": 60576
+      "icon_id": "4784108",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e658",
+      "unicode_decimal": 58968
     },
     {
-      "icon_id": "2404406",
-      "name": "组合",
-      "font_class": "zuhe",
-      "unicode": "e647",
-      "unicode_decimal": 58951
+      "icon_id": "8936804",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e611",
+      "unicode_decimal": 58897
     },
     {
-      "icon_id": "12550621",
-      "name": "表格",
-      "font_class": "biaoge",
-      "unicode": "e639",
-      "unicode_decimal": 58937
+      "icon_id": "9594839",
+      "name": "月亮",
+      "font_class": "yueliang",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
     },
     {
-      "icon_id": "577357",
-      "name": "删除",
-      "font_class": "shanchu",
-      "unicode": "e74b",
-      "unicode_decimal": 59211
+      "icon_id": "15512405",
+      "name": "agora_超清-高分辨率",
+      "font_class": "agora_chaoqing-gaofenbianshuai",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
     },
     {
-      "icon_id": "5361031",
-      "name": "上移",
-      "font_class": "shangyi",
-      "unicode": "e7b5",
-      "unicode_decimal": 59317
+      "icon_id": "19041812",
+      "name": "2动态文字",
+      "font_class": "2dongtaiwenzi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
     },
     {
-      "icon_id": "5361032",
-      "name": "下移",
-      "font_class": "xiayi",
-      "unicode": "e7b6",
-      "unicode_decimal": 59318
+      "icon_id": "19848816",
+      "name": "边框",
+      "font_class": "biankuang",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1334",
+      "name": "解锁",
+      "font_class": "jiesuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
     },
     {
       "icon_id": "383678",
@@ -55,11 +62,81 @@
       "unicode_decimal": 58925
     },
     {
+      "icon_id": "658956",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "1305461",
+      "name": "表格",
+      "font_class": "biaoge",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "2471366",
+      "name": "进度条",
+      "font_class": "jindutiao",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "3862602",
+      "name": "飞线图",
+      "font_class": "feixiantu",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "3862617",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "3900490",
+      "name": "柱形图",
+      "font_class": "shangwutubiao-",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "4354249",
+      "name": "形状-矩形",
+      "font_class": "xingzhuang-juxing",
+      "unicode": "eb97",
+      "unicode_decimal": 60311
+    },
+    {
       "icon_id": "4354256",
       "name": "形状-三角形",
       "font_class": "xingzhuang-sanjiaoxing",
       "unicode": "eb99",
       "unicode_decimal": 60313
+    },
+    {
+      "icon_id": "5387522",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "eaf2",
+      "unicode_decimal": 60146
+    },
+    {
+      "icon_id": "5879114",
+      "name": "组合",
+      "font_class": "zuhe",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "7036704",
+      "name": "下移",
+      "font_class": "xiayi",
+      "unicode": "e636",
+      "unicode_decimal": 58934
     },
     {
       "icon_id": "7594403",
@@ -69,11 +146,130 @@
       "unicode_decimal": 60055
     },
     {
-      "icon_id": "22383638",
+      "icon_id": "8229196",
+      "name": "向右旋转",
+      "font_class": "xiangyouxuanzhuan",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "10352343",
+      "name": "文本",
+      "font_class": "wenben",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "10451635",
+      "name": "饼图",
+      "font_class": "bingtu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "10451662",
+      "name": "水位图",
+      "font_class": "shuiweitu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "10949570",
+      "name": "轮播表格",
+      "font_class": "lunbobiaoge",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "11372693",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e8b6",
+      "unicode_decimal": 59574
+    },
+    {
+      "icon_id": "12323764",
+      "name": "上移",
+      "font_class": "shangyi",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "12323774",
+      "name": "下移",
+      "font_class": "xiayi1",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "12550669",
+      "name": "进度条",
+      "font_class": "jindutiao1",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "16679477",
+      "name": "孟菲斯-倒锥形",
+      "font_class": "mengfeisi-daozhuixing",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "18171254",
+      "name": "编号列表,排名,牌序,名次",
+      "font_class": "num-list-full",
+      "unicode": "ea3a",
+      "unicode_decimal": 59962
+    },
+    {
+      "icon_id": "18610498",
+      "name": "仪表盘",
+      "font_class": "yibiaopan",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "21924074",
+      "name": "排名列表",
+      "font_class": "paimingliebiao",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "22376331",
+      "name": "圆环图",
+      "font_class": "yuanhuantu",
+      "unicode": "eda0",
+      "unicode_decimal": 60832
+    },
+    {
+      "icon_id": "22383154",
       "name": "自由曲线",
       "font_class": "ziyouquxian",
-      "unicode": "edfa",
-      "unicode_decimal": 60922
+      "unicode": "eddb",
+      "unicode_decimal": 60891
+    },
+    {
+      "icon_id": "24373380",
+      "name": "icon-翻牌器",
+      "font_class": "icon-fanpaiqi",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "24398201",
+      "name": "icon-按钮",
+      "font_class": "icon-anniu",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "25162923",
+      "name": "装饰",
+      "font_class": "zhuangshi",
+      "unicode": "fd2c",
+      "unicode_decimal": 64812
     },
     {
       "icon_id": "26505830",
@@ -83,46 +279,11 @@
       "unicode_decimal": 60995
     },
     {
-      "icon_id": "8229196",
-      "name": "向右旋转",
-      "font_class": "xiangyouxuanzhuan",
-      "unicode": "e66a",
-      "unicode_decimal": 58986
-    },
-    {
-      "icon_id": "2187794",
-      "name": "图片",
-      "font_class": "tupian",
-      "unicode": "e616",
-      "unicode_decimal": 58902
-    },
-    {
-      "icon_id": "6056165",
-      "name": "锁",
-      "font_class": "suo",
-      "unicode": "e672",
-      "unicode_decimal": 58994
-    },
-    {
-      "icon_id": "6266248",
-      "name": "矩形",
-      "font_class": "juxing",
-      "unicode": "e790",
-      "unicode_decimal": 59280
-    },
-    {
-      "icon_id": "14220841",
-      "name": "文本",
-      "font_class": "wenben",
-      "unicode": "e652",
-      "unicode_decimal": 58962
-    },
-    {
-      "icon_id": "16859933",
-      "name": "按钮",
-      "font_class": "button",
-      "unicode": "e648",
-      "unicode_decimal": 58952
+      "icon_id": "30640795",
+      "name": "漏斗图",
+      "font_class": "loudoutu",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
     }
   ]
 }

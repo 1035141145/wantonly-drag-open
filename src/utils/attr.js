@@ -17,6 +17,13 @@ export const styleData = [
     { key: 'textAlign', label: '左右对齐' },
     { key: 'verticalAlign', label: '上下对齐' },
     { key: 'opacity', label: '不透明度' },
+    { key: 'otherColorLeft', label: '颜色1' },
+    { key: 'otherColorRigth', label: '颜色2' },
+    { key: 'otherBgColor', label: '背景色' },
+    { key: 'reverse', label: '方向' },
+    { key: 'borderTitle', label: '标题' },
+    { key: 'borderTitleWidth', label: '边框标题宽度' },
+    { key: 'dur', label: '单次动画时长(秒)' },
 ]
 
 export const styleMap = {

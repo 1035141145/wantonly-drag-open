@@ -3,24 +3,30 @@ module.exports = {
     env: {
         node: true,
     },
-    extends: [
-        'plugin:vue/recommended',
-        '@vue/airbnb',
-    ],
+    extends: ['plugin:vue/recommended', '@vue/airbnb'],
     parserOptions: {
         parser: '@babel/eslint-parser',
     },
     rules: {
+        'vuejs-accessibility/anchor-has-content': [
+            'off',
+            {
+                components: ['Anchor'],
+                accessibleChildren: ['MyAccessibleText'],
+                accessibleDirectives: ['myAccessibleDirective'],
+            },
+        ],
         camelcase: 'off',
+        'no-tabs': 'off',
         'no-console': 'off',
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
         'array-element-newline': ['error', 'consistent'],
-        indent: ['error', 4, { MemberExpression: 0, SwitchCase: 1, ignoredNodes: ['TemplateLiteral'] }],
+        indent: ['error', 4, { SwitchCase: 1, ignoredNodes: ['TemplateLiteral'] }],
         quotes: ['error', 'single'],
         'comma-dangle': ['error', 'always-multiline'],
         semi: ['error', 'never'],
         'object-curly-spacing': ['error', 'always'],
-        'max-len': ['error', 140],
+        'max-len': ['error', 260],
         'no-new': 'off',
         'linebreak-style': 'off',
         'import/extensions': 'off',
@@ -58,23 +64,30 @@ module.exports = {
         'no-mixed-operators': 'off',
         'no-await-in-loop': 'off',
         'template-curly-spacing': 'off',
-        'vue/html-indent': ['error', 4, {
-            attribute: 1,
-            baseIndent: 1,
-            closeBracket: 0,
-            alignAttributesVertically: true,
-            ignores: [],
-        }],
+        'vue/html-indent': [
+            'error',
+            4,
+            {
+                attribute: 1,
+                baseIndent: 1,
+                closeBracket: 0,
+                alignAttributesVertically: true,
+                ignores: [],
+            },
+        ],
         'vue/html-self-closing': 'off',
         'vue/singleline-html-element-content-newline': 'off',
-        'vue/max-attributes-per-line': ['error', {
-            singleline: {
-                max: 3,
+        'vue/max-attributes-per-line': [
+            'error',
+            {
+                singleline: {
+                    max: 10,
+                },
+                multiline: {
+                    max: 1,
+                },
             },
-            multiline: {
-                max: 1,
-            },
-        }],
+        ],
         'no-return-assign': 'off',
         'vue/multi-word-component-names': 'off',
         'vuejs-accessibility/click-events-have-key-events': 'off',

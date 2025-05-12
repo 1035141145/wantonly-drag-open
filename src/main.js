@@ -10,7 +10,15 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/styles/reset.css'
 import '@/styles/global.scss'
 import './components/iconSvg' // iconSvg
+import dataV from '@jiaminghi/data-view'
+import * as echarts from 'echarts'
+import { debounce, throttle } from '@/utils/debounce.js'
+import './utils/dialog'
 
+Vue.prototype.$echarts = echarts
+Vue.prototype.$debounce = debounce // 函数防抖
+Vue.prototype.$throttle = throttle // 函数节流
+Vue.use(dataV)
 Vue.use(ElementUI, { size: 'small' })
 
 Vue.config.productionTip = false

@@ -3,7 +3,7 @@
 .is-scroll-left::-webkit-scrollbar,
 .el-scrollbar::-webkit-scrollbar {
     width: 4px;
-    height: 8px !important;
+    height: 6px !important;
 }
 /*滚动条的背景区域的内阴影*/
 .el-scrollbar::-webkit-scrollbar-track {
@@ -11,14 +11,14 @@
      /*滚动条的背景区域的圆角*/
      border-radius: 10px;  
      /*滚动条的背景颜色*/
-     background-color: #ddd;
+     background-color: rgb(173, 167, 167);
 }
 /*滑块 滚动条的内阴影*/
 .is-scroll-right::-webkit-scrollbar-thumb,
 .is-scroll-left::-webkit-scrollbar-thumb,
 .el-scrollbar::-webkit-scrollbar-thumb {
-    box-shadow:0px 1px 3px rgba(0,0,0,0.3) inset;
-    background-color:#FF6C60;
+    box-shadow:0px 1px 3px rgba(109, 106, 106, 0.3) inset;
+    background-color:rgb(124, 115, 115);
     border-radius: 4px;
 }
 
@@ -28,12 +28,16 @@
     height:10px !important;
 }
 ::-webkit-scrollbar-track:horizontal {
-    background-color:#fff;
+    background-color:rgba(78, 72, 72, 1);
 }
 
+::-webkit-scrollbar-thumb {
+    background-color: #2a2b2c!important;
+}
 
-
-
+::-webkit-scrollbar-corner {
+    background-color:rgba(78, 72, 72, 1);
+}
 
 
 // .el-scrollbar:active>.el-scrollbar__bar,.el-scrollbar:focus>.el-scrollbar__bar,.el-scrollbar:hover>.el-scrollbar__bar {

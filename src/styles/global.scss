@@ -1,11 +1,13 @@
 .home {
+    color:#000;
     overflow: hidden;
-
+    
     .attr-list {
         overflow: auto;
         padding: 10px 14px;
         padding-top: 0;
         height: 100%;
+  
     }
 
     .title {
@@ -26,8 +28,90 @@
             padding-top: 0;
         }
     }
+    .el-switch__label{
+        color: rgba(255, 255, 255, 0.329);
+    }
+    .el-input.is-disabled .el-input__inner {
+        background-color: rgba(255, 255, 255, 0.329);
+    }
+    .el-textarea__inner {
+        background-color: rgba(78, 72, 72, 1);
+    }
+    .el-checkbox__inner{
+        background-color: rgba(78, 72, 72, 1);
+    }
+    .el-dialog__headerbtn .el-dialog__close{
+        color: #fff;
+        font-size: 18px;
+    }
 }
+.home-dark {
+    color:#fff;
+    overflow: hidden;
+    .el-collapse-item__wrap {
+        background-color: rgba(78, 72, 72, 1);
+        border-bottom:1px solid rgba(100, 96, 96, 0.678)
+    }
+    .el-collapse-item__header {
+        background-color: rgba(78, 72, 72, 1);
+        color: #fff;
+        border-bottom:1px solid rgba(100, 96, 96, 0.678)
+    }
+    .el-collapse {
+        border-top: 1px solid rgba(255, 255, 255, 0);    
+        border-bottom: 1px solid rgba(255, 255, 255, 0); 
+        border: none;
+    }
+    .el-input__inner{
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+    }
+    .el-form-item__label{
+        color: #fff;
+    }
+    .attr-list {
+        overflow: auto;
+        padding: 10px 14px;
+        padding-top: 0;
+        height: 100%;
+  
+    }
 
+    .title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .el-collapse-item__content {
+        padding-bottom: 0;
+    }
+
+    .v-common-attr {
+        margin-bottom: 18px;
+
+        .el-form {
+            padding: 10px;
+            padding-top: 0;
+        }
+    }
+    .el-switch__label{
+        color: rgba(255, 255, 255, 0.329);
+    }
+    .el-input.is-disabled .el-input__inner {
+        background-color: rgba(255, 255, 255, 0.329);
+    }
+    .el-textarea__inner {
+        background-color: rgba(78, 72, 72, 1);
+    }
+    .el-checkbox__inner{
+        background-color: rgba(78, 72, 72, 1);
+    }
+    .el-dialog__headerbtn .el-dialog__close{
+        color: #fff;
+        font-size: 18px;
+    }
+}
 .el-tabs {
     height: 100%;
 }
@@ -48,3 +132,4 @@
 .el-tag {
     text-align: right;
 }
+

@@ -171,5 +171,8 @@ $left-bgColor:#2a3542;  // 左侧菜单背景颜色;
   .keleBgColor{
     background: $keleColor;
   }
+  .el-dialog {
+    margin-top: 5vh !important;
+}
 
 

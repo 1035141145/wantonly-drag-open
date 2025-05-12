@@ -8,32 +8,17 @@
             </el-form-item>
             <el-form-item label="请求方法">
                 <el-select v-model="request.method">
-                    <el-option
-                        v-for="item in methodOptions"
-                        :key="item"
-                        :label="item"
-                        :value="item"
-                    >
-                    </el-option>
+                    <el-option v-for="item in methodOptions" :key="item" :label="item" :value="item"> </el-option>
                 </el-select>
             </el-form-item>
             <el-form-item label="请求参数">
                 <el-select v-model="request.paramType" placeholder="参数类型" @change="onChnage">
-                    <el-option
-                        v-for="item in dataOptions"
-                        :key="item"
-                        :label="item"
-                        :value="item"
-                    >
-                    </el-option>
+                    <el-option v-for="item in dataOptions" :key="item" :label="item" :value="item"> </el-option>
                 </el-select>
                 <div v-if="request.paramType === 'array'" class="param-container">
                     <p>数据项</p>
                     <div v-for="(item, index) in request.data" :key="index" class="div-delete">
-                        <el-input
-                            v-model="request.data[index]"
-                            placeholder="请输入参数值"
-                        ></el-input>
+                        <el-input v-model="request.data[index]" placeholder="请输入参数值"></el-input>
                         <span class="iconfont icon-shanchu" @click="deleteData(index)"></span>
                     </div>
 
@@ -68,17 +53,8 @@ import { urlRE, getURL } from '@/utils/request'
 export default {
     data() {
         return {
-            methodOptions: [
-                'GET',
-                'POST',
-                'PUT',
-                'DELETE',
-            ],
-            dataOptions: [
-                'object',
-                'array',
-                'string',
-            ],
+            methodOptions: ['GET', 'POST', 'PUT', 'DELETE'],
+            dataOptions: ['object', 'array', 'string'],
         }
     },
     computed: {
@@ -109,7 +85,7 @@ export default {
 
         validateURL() {
             const url = this.request.url
-            if (url && /^\d+$/.test(url) || !urlRE.test(getURL(url))) {
+            if ((url && /^\d+$/.test(url)) || !urlRE.test(getURL(url))) {
                 this.$message.error('请输入正确的 URL')
             }
         },

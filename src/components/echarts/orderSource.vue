@@ -13,6 +13,7 @@ export default {
         }
     },
     watch: {
+        // eslint-disable-next-line vue/no-arrow-functions-in-watch
         type: (v) => {
             this.redyBin2Option(v)
         },
