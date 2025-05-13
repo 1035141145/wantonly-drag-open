@@ -79,12 +79,12 @@
 1. 详细的文档
 
 ### 演示图片（新版本） http://onetwin.cn
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new1.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new2.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new3.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new4.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new5.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new6.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new1.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new2.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new3.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new4.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new5.png)
+![Image text](	https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new6.png)
 
 
 ### 演示图片（旧版本）
