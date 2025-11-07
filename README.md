@@ -29,7 +29,7 @@
 
 ## 免费私有化部署
 
-*   [免费私有化部署]([http://wantonly-drag.com.cn/](http://onetwin.cn/docs/deployment/resources/))  一月企业试用版
+*   [免费私有化部署](http://onetwin.cn/docs/deployment/resources/)  一月企业试用版
 
 ## 官方地址
 
