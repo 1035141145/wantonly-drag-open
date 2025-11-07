@@ -27,6 +27,9 @@
 
 **开源部分为基础模块，仅拥有编辑器的部分功能，适合学习和自行拓展开发。如果对您有帮助，希望点个 star。**
 
+## 免费私有化部署
+
+*   [免费私有化部署]([http://wantonly-drag.com.cn/](http://onetwin.cn/docs/deployment/resources/))  一月企业试用版
 
 ## 官方地址
 
