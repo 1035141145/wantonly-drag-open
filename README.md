@@ -17,11 +17,7 @@
 
 #### 个人项目，完全自己一个人独立自主开发，招合作伙伴，招投资，如果您看好这个项目，我们能有可能得一切合作模式。
 
-## 🚀 开源声明
 
-本项目完整功能为商业版本，开源为整个低代码编辑的核心框架，包含拖拉拽的功和示例拖拽组件，用户可以根据框架自行拖拽更多组件，并实现自己的功能。
-
-**如果觉得对您有帮助，希望帮忙点个start。**
 
 ---
 
@@ -203,6 +199,21 @@
 🎬 [B 站演示视频3](https://www.bilibili.com/video/BV1gqmzB7Ej9/)
 ---
 
+## 🚀 开源声明
+
+本项目完整功能为商业版本。
+
+开源为整个低代码编辑的核心框架，包含拖拉拽的功和示例拖拽组件，用户可以根据框架自行拖拽更多组件，并实现自己的功能。
+目前数据存于本地，自行写后端将数据存于数据库即可完成一套完整的项目
+
+**如果觉得对您有帮助，希望帮忙点个start。**
+
+<details>
+<summary>📸 开源版本效果预览</summary>
+![输入图片说明](public/image/kaiyuan2.png)
+![输入图片说明](public/image/kaiyuan.png)
+
+</details>
 
 ## 🍑联系方式
 
@@ -227,4 +238,3 @@ npm run dev
 # 生产打包
 npm run build
 ```
-![输入图片说明](public/image/11.png)![输入图片说明](public/image/10.png)![输入图片说明](public/image/9.png)![输入图片说明](public/image/8.png)![输入图片说明](public/image/7.png)![输入图片说明](public/image/6.png)![输入图片说明](public/image/5.png)![输入图片说明](public/image/4.png)![输入图片说明](public/image/3.png)![输入图片说明](public/image/2.png)![输入图片说明](public/image/1.png)
