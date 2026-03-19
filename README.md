@@ -160,15 +160,19 @@
 <details>
 <summary>📸 新版本预览图</summary>
 
-![预览 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new1.png)
-![预览 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new2.png)
-![预览 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new3.png)
-![预览 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new4.png)
-![预览 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new5.png)
-![预览 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new6.png)
-<img width="3000" height="1662" alt="1" src="https://github.com/user-attachments/assets/22bf11b2-2819-4ef2-95b0-101e044a86e2" />
-<img width="3000" height="1662" alt="2" src="https://github.com/user-attachments/assets/87525820-7abf-4fb0-922d-34d0b1086db4" />
-
+![输入图片说明](public/image/13.png)
+![输入图片说明](public/image/12.png)
+![输入图片说明](public/image/11.png)
+![输入图片说明](public/image/10.png)
+![输入图片说明](public/image/9.png)
+![输入图片说明](public/image/8.png)
+![输入图片说明](public/image/7.png)
+![输入图片说明](public/image/6.png)
+![输入图片说明](public/image/5.png)
+![输入图片说明](public/image/4.png)
+![输入图片说明](public/image/3.png)
+![输入图片说明](public/image/2.png)
+![输入图片说明](public/image/1.png)
 
 </details>
 
@@ -221,3 +225,4 @@ npm run dev
 # 生产打包
 npm run build
 ```
+![输入图片说明](public/image/11.png)![输入图片说明](public/image/10.png)![输入图片说明](public/image/9.png)![输入图片说明](public/image/8.png)![输入图片说明](public/image/7.png)![输入图片说明](public/image/6.png)![输入图片说明](public/image/5.png)![输入图片说明](public/image/4.png)![输入图片说明](public/image/3.png)![输入图片说明](public/image/2.png)![输入图片说明](public/image/1.png)
