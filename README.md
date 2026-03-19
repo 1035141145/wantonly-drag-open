@@ -210,7 +210,9 @@
 
 <details>
 <summary>📸 开源版本效果预览</summary>
+
 ![输入图片说明](public/image/kaiyuan2.png)
+
 ![输入图片说明](public/image/kaiyuan.png)
 
 </details>
