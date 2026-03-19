@@ -71,13 +71,12 @@
 <details>
 <summary>📸 旧版本预览图</summary>
 
-![旧版 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/1.png)
-![旧版 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/2.png)
-![旧版 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/3.png)
-![旧版 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/4.png)
-![旧版 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/5.png)
-![旧版 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/6.png)
-
+![输入图片说明](public/image/a.png)
+![输入图片说明](public/image/b.png)
+![输入图片说明](public/image/c.png)
+![输入图片说明](public/image/d.png)
+![输入图片说明](public/image/e.png)
+![输入图片说明](public/image/f.png)
 </details>
 
 ## 🌐 版本对比
