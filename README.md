@@ -1,149 +1,223 @@
+# 🚀 壹孪(OneTwin) - 企业级低代码数字孪生可视化大屏
 
+> 构建高保真、可交互的企业级数字孪生平台
 
-# 企业级低代码数字孪生、数据可视化大屏解决方案
+融合三维可视化、实时数据与 AI 智能，驱动制造、能源、园区等场景的数字化闭环运营
 
-## 简介
+[![官网](https://img.shields.io/badge/官网-onetwin.cn-blue)](https://onetwin.cn)
+[![文档](https://img.shields.io/badge/文档-onetwin.cn/docs-blue)](https://onetwin.cn/docs)
+[![Gitee](https://img.shields.io/badge/Gitee-仓库-red)](https://gitee.com/wei_feng_qin/wantonly-drag-open)
+[![GitHub](https://img.shields.io/badge/GitHub-仓库-black)](https://github.com/1035141145/wantonly-drag-open)
+
+---
+
+## 🚀简介
 
 本项目提供企业级低代码数据可视化大屏解决方案，通过简单的拖拉拽操作即可生成精美的看板。项目旨在解决企业可视化大屏**开发过程繁琐**、**开发成本高**、**维护成本高**等问题。基于多年经验，我们发现企业投入大量精力开发的大屏常因生产变化导致维护困难，最终沦为**面子工程**。本解决方案能有效解决这些问题，助推企业数字化转型。
 
-## 版本信息
+#### 个人项目，完全自己一个人独立自主开发，招合作伙伴，招投资，如果您看好这个项目，我们能有可能得一切合作模式。
 
-### 旧版本：wantonly-drag    http://wantonly-drag.com.cn
+## 🚀 开源声明
 
-[wantonly-drag](http://wantonly-drag.com.cn) 企业级数据可视化解决方案
+本项目完整功能为商业版本，开源为整个低代码编辑的核心框架，包含拖拉拽的功和示例拖拽组件，用户可以根据框架自行拖拽更多组件，并实现自己的功能。
 
-# **全新重构版本：壹孪**   http://onetwin.cn
+**如果觉得对您有帮助，希望帮忙点个start。**
 
-## [onetwin](http://onetwin.cn) **壹孪** 是项目的全新重构版本，采用最新的技术vue3+vite+elementplus+pinia，提供更加流畅的性能、更美的 UI 和更好的交互体验，用户数据独立，免费使用。
+---
 
-### 个人项目，完全自己一个人独立自主开发，招合作伙伴，招投资，如果您看好这个项目，我们能有可能得一切合作模式。
+## 📖 行业核心痛点
 
-## 开源地址
+| 痛点     | 传统方案   | 壹孪方案       |
+| -------- | ---------- | -------------- |
+| 开发周期 | 数周至数月 | **小时级**     |
+| 开发成本 | 高昂       | **低成本**     |
+| 维护难度 | 困难       | **可视化维护** |
 
-*   [gitee](https://gitee.com/wei_feng_qin/wantonly-drag-open) 跳转国内 gitee 查看
-*   [github](https://github.com/1035141145/wantonly-drag-open) 跳转国外 github 查看
+---
 
-## 声明
+## ✨ 壹孪(OneTwin)核心优势
 
-**开源部分为基础模块，仅拥有编辑器的部分功能，适合学习和自行拓展开发。如果对您有帮助，希望点个 star。**
+| 特性 | 说明 |
+|------|------|
+| 🎯 **零代码搭建** | 拖拽式配置，30 分钟快速还原工厂、园区、设备等物理场景 |
+| 🤖 **AI 智能生成** | 集成 DeepSeek 大模型，自然语言一键生成 3D 组件 |
+| ⚡ **毫秒级同步** | 对接 IoT/ERP/MES 系统，实现业务状态实时映射与预警 |
+| 🔄 **跨行业复用** | 预置制造、电力、仓储、交通等行业模板，开箱即用 |
+| 🥽 **沉浸式仿真** | 支持 Web 端全景漫游、AR 巡检、应急预案推演 |
 
+---
 
-## 官方地址
+## 🌐 版本对比
 
-*   [体验地址](http://wantonly-drag.com.cn/) --旧版本
-*   [体验地址](http://onetwin.cn/) --新版本
-*   [文档地址](http://wantonly-drag.com.cn/doc/)
-
-#### 体验账号（旧版本）：123456@qq.com 密码:123456
-#### 体验账号（新版本）：test 密码:123456
-
-## B站演示视频地址
-
-[https://www.bilibili.com/video/BV1t48ue3ErW/?vd_source=0f99e4f7b7ed463ff254557a691d536a](https://www.bilibili.com/video/BV1t48ue3ErW/?vd_source=0f99e4f7b7ed463ff254557a691d536a)
-
-## 主要功能
-
-*   🍑 具备完善的鉴权系统，集成登录、注销、用户管理、角色管理、菜单管理。
-*   🍐 **看板设计：** 通过自定义**拖拉拽**的方式组合成精美的可视化大屏，具备类似于 C 端软件般的操作体验，简单上手，组件繁多，肆意创作。
-*   🍎 **看板管理：** 由看板维护、发布列表、模板列表组成，结合权限管控来管理用户创作的看板，**轻松维护**。
-*   🍉 **看板维护：** 对保存的看板进行上架、下降、删除、再编辑等操作。
-*   🍉 **发布列表：** 对已经正式上架发布的看板进行**发布公告**，实时在看板上发布重要通知，实现**大屏互联**。
-*   🍇 **模板列表：** 对各类看板模板进行维护。
-*   🍇 **资源配置：** 集成图片、素材资源维护、三维模型资源维护、自拓展组件、收藏夹维护等功能。
-*   🍇 **自定义拓展：** 支持用户自己开发组件并上传到平台当成组件使用，支持多组件组合添加到**收藏夹**方便下次直接使用。
-*   🍇 **数字孪生**   全网最具创新的数字孪生模式，二维与三维的完美融合
-
-
-## 功能点
-这是本项目具有的功能点。
-1. 自定义主题
-1. 灵活调整画布
-1. 组件丰富
-1. 丰富的模板
-1. 组件联动
-1. 拖拽旋转
-1. 支持快捷键快捷操作
-1. 绑定事件
-1. 绑定动画
-1. 复制粘贴剪切
-1. 多个组件的组合和拆分
-1. 锁定组件
-1. 三维模型展示与三维模型库维护
-1. 图片素材库
-1. 完善的权限管控
-1. 自适应分辨率
-1. JSON配置
-1. 自定义编码拓展组件（基于js、jq自行编码）
-1. 发布公告（大屏互联）
-1. 所有组件支持三维空间转换
-1. 详细的文档
-
-### 演示图片（新版本） http://onetwin.cn
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new1.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new2.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new3.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new4.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new5.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/new6.png)
+| 特性   | 旧版本         | 新版本 (壹孪)           |
+| ------ | -------------- | ----------------------- |
+| 技术栈 | Vue2 + Webpack | **Vue3 + Vite + Pinia** |
+| 体验   | 基础           | **流畅 + 美观**         |
+| 数据   | 共享           | **用户独立**            |
+| 费用   | 个人免费              | **个人免费**            |
+| 私有化部署   | 支持      | **支持**         |
+| 独立项目导出   | -       | **支持**            |
+| 三维孪生场景设计  | 丰富     | **覆盖大部分场景需求**         |
+| 模型编辑器  | -     | **支持**         |
+| AI智能设计   | -      | **支持**         |
+| 远程遥控   | -      | **支持**         |
+| API操作场景  | -       | **支持**         |
+| 源码购买  | 支持       | **大型企业用户支持** / **支持版权买断**       |
 
 
-### 演示图片（旧版本）
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/1.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/2.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/3.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/4.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/5.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/6.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/7.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/8.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204243.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204325.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204350.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204409.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204422.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230414204543.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q1.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q2.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q3.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q4.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q5.png)
-![Image text](https://gitee.com/wei_feng_qin/wantonly-drag-open/raw/master/src/assets/q6.png)
+### 快速体验
+
+| 版本 | 地址                                                | 账号                                                                      | 密码     |
+| ---- | --------------------------------------------------- | ------------------------------------------------------------------------- | -------- |
+| 旧版 | [wantonly-drag.com.cn](http://wantonly-drag.com.cn) | `123456@qq.com`                                                           | `123456` |
+| 新版 | [onetwin.cn](https://onetwin.cn)                     | `test` | `123456` |
+
+---
+
+## ✨ 核心功能
 
 
 
+### 整体功能详情
 
-**版权归属**
-![微信截图_20240725093014](https://github.com/user-attachments/assets/1056f63f-1fde-4863-8c37-b961e3dd4afb)
+| 功能点         | 旧版本 | 新版本   |
+| -------------- | ------ | -------- |
+| 组态编辑器   | ✅     | ✅**美观**       |
+| 组件丰富度     | ✅基础   | ✅**增强** |
+| 模板数量       | ✅有限   | ✅**丰富** |
+| 组件联动       | ✅     | ✅       |
+| 拖拽旋转       | ✅     | ✅       |
+| 快捷键操作     | ✅     | ✅       |
+| 绑定事件       | ✅     | ✅       |
+| 绑定动画       | ✅     | ✅       |
+| 图层管理       | ✅     | ✅       |
+| 组件三维样式转换     | ✅     | ✅       |
+| 复制粘贴剪切   | ✅     | ✅       |
+| 组件组合拆分   | ✅     | ✅       |
+| 锁定组件       | ✅     | ✅       |
+| 组件调用接口   | ✅     | ✅       |
+| 统一接口管理   | ❌     | ✅       |
+| 图片素材维护     | ✅     | ✅       |
+| 视频素材维护     | ✅     | ✅       |
+| 三维模型维护     | ✅     | ✅       |
+| 音频素材维护     | ❌    | ✅       |
+| HDR素材维护     | ❌     | ✅       |
+| 收藏夹维护     | ✅     | ✅       |
+| 跨框架上传组件拓展     | ✅     | ✅       |
+| 在线编码拓展组件 | ✅     | ✅       |
+| 权限管控       | ✅     | ✅       |
+| 发布公告       | ✅     | ✅       |
+| 单大屏一键导出独立部署       | ❌     | ✅       |
+| AI智能设计       | ❌     | ✅       |
+| Ccesium.js孪生组件       | ✅     | ✅       |
+| Three.js孪生组件       | ✅     | ✅**增强**       |
+| 模型编辑器       | ❌     | ✅       |
+| 远程遥控       | ❌     | ✅       |
+| API操作场景     | ❌     | ✅       |
+| API场景控制调试器       | ❌     | ✅       |
 
-### 优势
+---
 
-- 🍑 私有化部署（安全自己掌控） 
-- 🍐 简单直白的操作方式(不花里胡哨，更贴近用户)
-- 🍇 我们专注，所有更加专业，更能体会用户的需求
+### 🌐 孪生功能详情
+
+| 功能点 | 旧版本 | 新版本 | 说明 | 使用场景 |
+|:-------|:------:|:------:|:-----|:---------|
+| **三维模型导入** | ✅ | ✅ | 支持 `.glb`, `.gltf` 等 web 端主流格式 | 工厂设备、建筑、车辆模型加载 |
+| **模型动画播放** | ✅ | ✅ | 支持模型自带动画的播放和播放相关参数 | 机械臂运转、人物行走、设备开合 |
+| **相机配置** | ✅ | ✅ | 调整相机到合适位置 | 最佳观察角度、特写镜头设定 |
+| **背景配置** | ✅ | ✅增强 | 设置场景的背景，支持全景图片，(✨新版本支持 HDR) | 园区全景、天空盒、HDR 环境映射 |
+| **控制器配置** | ✅ | ✅增强 | 设置轨道控制器，缩放、阻尼、自动旋转等，（✨新版本支持限制控制器俯仰角） | 缩放阻尼、自动旋转、俯仰角限制 |
+| **二维孪生交互** | ✅ | ✅ | 任意二维组件都可以嵌入到三维场景中自定义点位，并实现交互。二维组件配置了接口就可以实现传感器等数据展示，实现二维与三维的完美融合 | 传感器数据面板、图表悬浮显示等 |
+| **三维孪生交互** | ✅ | ✅ | 与二维孪生交互类似，三维交互不会随着摄像机转动，嵌入实体场景中，实现三维场景的交互 | 嵌入广告牌、广告视频播放等 |
+| **辅助器配置** | ✅ | ✅ | 设置网格、坐标轴、帧率、视图辅助器等 | 开发调试、空间定位参考 |
+| **单按钮配置** | ✅ | ✅增强 | 在场景中添加按钮，可配置点击事件 <br/>（旧版本：自动旋转、重置相机、切换相机、机器人巡检、模型拆分还原） <br/>（✨新版本：自动旋转、重置相机、切换相机、机器人巡检、模型拆分还原、播放停止动画、音乐、环境效果、材质替换还原、模型隐藏\显示、摄像头动画轨迹） | 相机切换、动画控制、效果触发 |
+| **按钮组配置** | ✅ | ✅增强 | 在场景中添加按钮组，可配置点击事件  <br/>（旧版本：显示隐藏组件、显示隐藏 CSS2D 组、切换相机、机器人巡检、模型变换位置、播放停止动画、显示隐藏模型） <br/>（✨新版本：显示隐藏组件、显示隐藏 CSS2D 组、切换相机、机器人巡检、模型变换位置、播放停止动画、显示隐藏模型、模型拆分还原、播放停止动画、音乐、环境效果、材质替换还原、模型隐藏\显示、摄像头动画轨迹） | 多功能控制面板、批量场景事件控制 |
+| **模型编辑器** | ❌ | ✅ | 内置轻量级模型编辑器，支持多种模型变换操作 | 模型位置、旋转、缩放调整 |
+| **模型旋转/缩放/平移** | ✅ | ✅ | 轻量调整模型大小、位置、旋转，可不借助模型编辑器 | 模型布局调整、场景搭建 |
+| **模型层级管理** | ✅ | ✅增强 | 可展开/折叠模型结构树，支持绑定事件 | 复杂模型组织、事件绑定 |
+| **模型事件 - 点击** | ✅ | ✅增强 | 旧版本：触发 CSS2D。新版本：触发 CSS2D、触发 CSS3D、模型拆分还原、播放停止动画、音乐、环境效果、材质替换还原、模型隐藏\显示 | 模型高亮、信息弹窗、动画触发 |
+| **模型事件 - 角色靠近** | ❌ | ✅ | 触发 CSS2D、触发 CSS3D、模型拆分还原、播放停止动画、音乐、环境效果、材质替换还原、模型隐藏\显示 | 自动讲解、区域预警、互动触发 |
+| **灯光配置** | ✅ | ✅ | 支持环境光、点光源、平行光、聚光灯等类型 | 日夜切换、重点照明、氛围营造 |
+| **雾效果设置** | ❌ | ✅ | 支持线性雾、指数雾，增强空间感 | 远景模糊、大气透视、神秘氛围 |
+| **后处理设置** | ❌ | ✅ | 支持辉光强度、亮度、对比度、饱和度、黑白度、怀旧感、怀旧感等场景效果配置，预设：赛博朋克、冷调科技、怀旧电影、高级黑白等预设效果 | 赛博朋克风、电影级画质、HDR |
+| **环境预设效果** | ❌ | ✅ | 对背景、灯光、雾效果、着色器效果进行预设，可一键切换（配合单按钮、按钮组、机器人靠近触发）提供"日出"、"夜景"、"工业风"等一键切换方案 | 日出/夜景/工业风快速切换 |
+| **机器人巡检** | ✅ | ✅增强 | 可配置机器人第一、第三人称漫游场景，支持灵活配置碰撞检测，自定义碰撞体，支持多种角色（新版本：模型靠近事件由机器人触发） | 自动巡检、碰撞检测、角色切换 |
+| **摄像机轨迹动画** | ❌ | ✅ | 可配置开场动画路径，支持关键帧编辑 | 宣传片开场、自动漫游导览 |
+| **模型动态移动** | ✅ | ✅增强 | 根据固定路径移动模型，需配合按钮组或者单按钮控件配置（新版本支持 API 控制模型移动到指定位置），适用房屋拆分与还原，人物、设备位置同步等真实场景 | 房屋拆分、API 控制位置同步 |
+| **流动线条轨迹** | ❌ | ✅ | 可创建数据流线，用于可视化数据传输路径，场景导航等 | 数据传输路径、物流轨迹、导航 |
+| **着色器效果** | ❌ | ✅ | 支持自定义 Shader，实现发光、透明、波纹、海面、火焰、管道流动等特效 | 发光边框、水流、火焰、管道流动 |
+| **远程遥控** | ❌ | ✅ | 支持通过 API 控制相机、模型、动画等 | 多屏联动、远程巡检、指挥控制 |
+| **API 场景控制调试器** | ❌ | ✅ | 内置调试面板，可测试 API 调用与响应 | 开发调试、接口测试、快速验证 |
+| **出场动画配置** | ✅ | ✅ | 可配置模型、相机、灯光的出场动画 | 项目加载开场效果展示 |
+| **远程造控** | ❌ | ✅ | 支持多终端远程操控，适用于大屏联动 | 大屏联动、多端协同控制 |
+| **后处理效果** | ❌ | ✅ | 支持抗锯齿、景深、模糊、HDR 等高级渲染 | 高级渲染、画质优化 |
+| **材质替换** | ❌ | ✅ | 支持选定实体进行材质替换，可配置材质、颜色、透明度、金属度等配置，可结合单按钮、按钮组、机器人靠近触发能实现游戏级的效果 | 设备状态变色、游戏级渲染效果 |
+
+---
+
+## 🖼️ 效果预览
+
+<details>
+<summary>📸 新版本预览图</summary>
+
+![预览 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new1.png)
+![预览 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new2.png)
+![预览 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new3.png)
+![预览 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new4.png)
+![预览 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new5.png)
+![预览 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/new6.png)
+<img width="3000" height="1662" alt="1" src="https://github.com/user-attachments/assets/22bf11b2-2819-4ef2-95b0-101e044a86e2" />
+<img width="3000" height="1662" alt="2" src="https://github.com/user-attachments/assets/87525820-7abf-4fb0-922d-34d0b1086db4" />
 
 
+</details>
+
+<details>
+<summary>📸 旧版本预览图</summary>
+
+![旧版 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/1.png)
+![旧版 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/2.png)
+![旧版 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/3.png)
+![旧版 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/4.png)
+![旧版 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/5.png)
+![旧版 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/6.png)
+
+</details>
+
+## 🖼️版权归属
+<img width="600" height="800" alt="2" src="https://github.com/user-attachments/assets/1056f63f-1fde-4863-8c37-b961e3dd4afb" />
+
+---
+
+## 📺 演示视频
+
+🎬 [B 站演示视频1](https://www.bilibili.com/video/BV1t48ue3ErW/)
+🎬 [B 站演示视频2](https://www.bilibili.com/video/BV1p8ktBRE4K/)
+🎬 [B 站演示视频3](https://www.bilibili.com/video/BV1aMbTzwEmp/)
+🎬 [B 站演示视频3](https://www.bilibili.com/video/BV1gqmzB7Ej9/)
+---
 
 
-### 说明
-
-- 🍑 项目码源为开源基础demo,有需求的可以拿去自行研究拓展
-
-
-### 联系方式
+## 🍑联系方式
 
 - 🍑 QQ：1035141145
 
-## 开发
-### 安装
-```
-npm i
-```
-### 运行
-```
+## 🚀 快速开始
+
+### 环境要求
+
+- Node.js >= 16.x
+- npm >= 8.x
+
+### 安装运行
+
+```bash
+# 安装依赖
+npm install
+
+# 开发模式
 npm run dev
-```
-### 打包
-```
+
+# 生产打包
 npm run build
 ```
-
