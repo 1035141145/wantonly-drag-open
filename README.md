@@ -190,7 +190,8 @@
 
 
 ## 🖼️版权归属
-<img width="600" height="800" alt="2" src="https://github.com/user-attachments/assets/1056f63f-1fde-4863-8c37-b961e3dd4afb" />
+
+![输入图片说明](public/image/banquan.png)
 
 ---
 
