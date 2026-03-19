@@ -47,6 +47,39 @@
 
 ---
 
+## 🖼️ 效果预览
+
+<details>
+<summary>📸 新版本预览图</summary>
+
+![输入图片说明](public/image/13.png)
+![输入图片说明](public/image/12.png)
+![输入图片说明](public/image/11.png)
+![输入图片说明](public/image/10.png)
+![输入图片说明](public/image/9.png)
+![输入图片说明](public/image/8.png)
+![输入图片说明](public/image/7.png)
+![输入图片说明](public/image/6.png)
+![输入图片说明](public/image/5.png)
+![输入图片说明](public/image/4.png)
+![输入图片说明](public/image/3.png)
+![输入图片说明](public/image/2.png)
+![输入图片说明](public/image/1.png)
+
+</details>
+
+<details>
+<summary>📸 旧版本预览图</summary>
+
+![旧版 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/1.png)
+![旧版 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/2.png)
+![旧版 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/3.png)
+![旧版 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/4.png)
+![旧版 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/5.png)
+![旧版 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/6.png)
+
+</details>
+
 ## 🌐 版本对比
 
 | 特性   | 旧版本         | 新版本 (壹孪)           |
@@ -155,38 +188,7 @@
 
 ---
 
-## 🖼️ 效果预览
 
-<details>
-<summary>📸 新版本预览图</summary>
-
-![输入图片说明](public/image/13.png)
-![输入图片说明](public/image/12.png)
-![输入图片说明](public/image/11.png)
-![输入图片说明](public/image/10.png)
-![输入图片说明](public/image/9.png)
-![输入图片说明](public/image/8.png)
-![输入图片说明](public/image/7.png)
-![输入图片说明](public/image/6.png)
-![输入图片说明](public/image/5.png)
-![输入图片说明](public/image/4.png)
-![输入图片说明](public/image/3.png)
-![输入图片说明](public/image/2.png)
-![输入图片说明](public/image/1.png)
-
-</details>
-
-<details>
-<summary>📸 旧版本预览图</summary>
-
-![旧版 1](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/1.png)
-![旧版 2](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/2.png)
-![旧版 3](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/3.png)
-![旧版 4](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/4.png)
-![旧版 5](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/5.png)
-![旧版 6](https://github.com/1035141145/wantonly-drag-open/blob/master/src/assets/6.png)
-
-</details>
 
 ## 🖼️版权归属
 <img width="600" height="800" alt="2" src="https://github.com/user-attachments/assets/1056f63f-1fde-4863-8c37-b961e3dd4afb" />
