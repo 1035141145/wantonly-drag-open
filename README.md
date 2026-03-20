@@ -1,4 +1,4 @@
-# ![输入图片说明](public/image/onetwin.png) 壹孪(OneTwin) - 企业级低代码数字孪生可视化大屏
+# <img src="public/image/onetwin.png" alt="输入图片说明" width="150" height="80" /> 壹孪(OneTwin) - 企业级低代码数字孪生可视化大屏
 
 > 构建高保真、可交互的企业级数字孪生平台
 
