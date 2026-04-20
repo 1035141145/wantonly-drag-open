@@ -187,11 +187,7 @@
 
 
 
-## 🖼️版权归属
 
-![输入图片说明](public/image/banquan.png)
-
----
 
 ## 📺 演示视频
 
@@ -222,6 +218,11 @@
 ## 🍑联系方式
 
 - 🍑 QQ：1035141145
+  - QQ二维码：<img src="public/image/qq.png" alt="QQ二维码" width="150" />
+- 💬 微信：
+  - 微信二维码：<img src="public/image/wechat.png" alt="微信二维码" width="150" />
+- 📱 关注公众号获取更多资讯：
+  - 公众号二维码：<img src="public/image/qrcode.jpg" alt="公众号二维码" width="150" />
 
 ## 🚀 快速开始
 
@@ -242,3 +243,9 @@ npm run dev
 # 生产打包
 npm run build
 ```
+
+## 🖼️版权归属
+
+![输入图片说明](public/image/banquan.png)
+
+---
