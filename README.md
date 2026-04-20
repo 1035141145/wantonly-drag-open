@@ -191,10 +191,12 @@
 
 ## 📺 演示视频
 
-🎬 [B 站演示视频1](https://www.bilibili.com/video/BV1t48ue3ErW/)
-🎬 [B 站演示视频2](https://www.bilibili.com/video/BV1p8ktBRE4K/)
+🎬 [B 站演示视频1](https://www.bilibili.com/video/BV1orQJB2Ehz/)
+🎬 [B 站演示视频2](https://www.bilibili.com/video/BV1t4D7BxEL5/)
 🎬 [B 站演示视频3](https://www.bilibili.com/video/BV1aMbTzwEmp/)
-🎬 [B 站演示视频3](https://www.bilibili.com/video/BV1gqmzB7Ej9/)
+🎬 [B 站演示视频4](https://www.bilibili.com/video/BV1gqmzB7Ej9/)
+🎬 [B 站演示视频5](https://www.bilibili.com/video/BV1t48ue3ErW/)
+🎬 [B 站演示视频6](https://www.bilibili.com/video/BV1p8ktBRE4K/)
 ---
 
 ## 🚀 开源声明
@@ -215,14 +217,22 @@
 
 </details>
 
-## 🍑联系方式
+## 🍑 联系方式
 
-- 🍑 QQ：1035141145
-  <img src="public/image/qq.png" alt="QQ二维码" width="150" />
-- 💬 微信：
-  <img src="public/image/wechat.png" alt="微信二维码" width="150" />
-- 📱 关注公众号获取更多资讯：
-  <img src="public/image/qrcode.jpg" alt="公众号二维码" width="150" />
+<p align="center">
+  <strong>QQ</strong>: 1035141145<br>
+  <img src="public/image/qq.png" alt="QQ二维码" width="130" style="margin: 8px 0; border-radius: 6px;">
+</p>
+
+<p align="center">
+  <strong>微信</strong><br>
+  <img src="public/image/wechat.png" alt="微信二维码" width="130" style="margin: 8px 0; border-radius: 6px;">
+</p>
+
+<p align="center">
+  <strong>🌟 关注公众号，获取更多精彩资讯 🌟</strong><br>
+  <img src="public/image/qrcode.jpg" alt="公众号二维码" width="150" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+</p>
 
 ## 🚀 快速开始
 
