@@ -18,6 +18,22 @@
 
 </div>
 
+## 🎮 三维孪生引擎
+
+AI 智能体的"身体"——承载所有智能交互的三维场景引擎：
+
+| 能力 | 说明 |
+|:---|:---|
+| 双引擎渲染 | Three.js + Cesium.js，覆盖室内/室外/地球级场景 |
+| 模型编辑器 | 内置轻量级编辑器，导入即编辑 |
+| 机器人巡检 | 第一/三人称漫游，碰撞检测，多角色 |
+| 着色器特效 | 自定义 Shader，发光/波纹/火焰/管道流动 |
+| 后处理 | 辉光/亮度/对比度/赛博朋克预设 |
+| 环境预设 | 日出/夜景/工业风一键切换 |
+| 远程遥控 | API 控制相机/模型/动画，手机端操控大屏 |
+
+---
+
 ---
 
 > **AI 不只是辅助工具，它是数字孪生的灵魂。**
@@ -90,21 +106,7 @@ AI 根据业务规则自动触发多对象联动，实现真正的"智能孪生"
 
 ---
 
-## 🎮 三维孪生引擎
 
-AI 智能体的"身体"——承载所有智能交互的三维场景引擎：
-
-| 能力 | 说明 |
-|:---|:---|
-| 双引擎渲染 | Three.js + Cesium.js，覆盖室内/室外/地球级场景 |
-| 模型编辑器 | 内置轻量级编辑器，导入即编辑 |
-| 机器人巡检 | 第一/三人称漫游，碰撞检测，多角色 |
-| 着色器特效 | 自定义 Shader，发光/波纹/火焰/管道流动 |
-| 后处理 | 辉光/亮度/对比度/赛博朋克预设 |
-| 环境预设 | 日出/夜景/工业风一键切换 |
-| 远程遥控 | API 控制相机/模型/动画，手机端操控大屏 |
-
----
 
 ## 🖼️ 效果预览
 
@@ -322,9 +324,9 @@ npm run build
 
 ## 🖼️ 版权归属
 
-<img src="public/image/ruanzhu2.jpg" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+<img src="public/image/ruanzhu2.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 
-<img src="public/image/banquan.jpg" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
+<img src="public/image/banquan.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 
 ---
 
@@ -332,6 +334,5 @@ npm run build
 
 **如果这个项目对你有帮助，请给一个 ⭐ Star，这是对独立开发者最大的支持！**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=1035141145/wantonly-drag-open&type=Date)](https://star-history.com/#1035141145/wantonly-drag-open&Date)
 
 </div>
