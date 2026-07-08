@@ -18,6 +18,135 @@
 
 </div>
 
+---
+
+## 🚀 开源说明
+
+本项目开源了**低代码编辑器的核心框架**，非完整版本。包含：
+
+- ✅ 完整的拖拽式画布编辑器
+- ✅ 少量示例拖拽组件
+- ✅ 组件联动 / 事件 / 动画体系
+- ✅ 本地数据持久化
+
+你可以基于此框架自行扩展更多组件，对接后端数据库即可构建完整项目，在Vibe Coding，依托于这个基础框架，您可以轻松拓展自己的数据可视化平台。
+
+> 💡  **完整商业版本** 包含更多组件、三维孪生引擎、**AI 智能体能力、场景 API 开放接口**、权限管理等。
+> 💡 **如果这个项目对你有帮助，请给一个 ⭐ Star，**
+---
+
+## AI设计模式
+
+AI智能体辅助设计，通过自然语言描述即可自动生成场景布局、推荐组件搭配，大幅降低设计门槛，提升搭建效率
+
+![预览8](public/image/new3.png)
+![预览9](public/image/new4.png)
+
+
+Agent模式流程（核心）
+
+handleSubmitAgent(value, agentRefs)               [useAiChat.js L219]
+  │
+  ├─ 初始化: agentLogs=[], agentProgress=null, lastAgentResult=null
+  ├─ 创建 AbortController
+  ├─ 推入agentConversationHistory
+  │
+  ▼
+agentLoop(userMessage, options)                   [agent-loop.js]
+  │
+  ├─ actionLayer = createEditorActionLayer()
+  ├─ snapshotIndexBefore = snapshotStore.snapshotIndex
+  │
+  ▼
+runOrchestrator(userMessage, options)             [orchestrator.js]
+  │
+  ├─ 创建 themeCtx = createThemeContext(canvasW, canvasH)
+  │   初始值: {primaryColor:"#00e9db", secondaryColor:"#00c0e9",
+  │           scene:"default", headerIndex:0, borderIndex:0, ...}
+  │
+  ├─ 继承 prevThemeContext.usedLayouts
+  │
+  ▼
+┌─────────────────────────────────────────────────────────┐
+│              analyzeIntent(userMessage, ...)             │
+│                  [intent-analyzer.js]                    │
+│                                                         │
+│  1. 构建skill列表文本 (registry.list)                    │
+│  2. 构建画布信息 (buildCanvasInfo)                       │
+│  3. 调用 askAi() (最多重试2次)                           │
+│  4. 解析AI返回JSON: extractJson() → JSON.parse()        │
+│  5. 过滤无效skill                                       │
+│  6. 返回 plan: {intent, skills, scene, reason,          │
+│                clarifyOptions}                           │
+└─────────────────────────────────────────────────────────┘
+  │
+  ├─ plan.intent === "clarify"
+  │   → 返回 {text: 澄清选项, clarifyOptions: [...]}
+  │
+  ├─ plan.intent === "question" || skills.length === 0
+  │   → 返回 {text: "无法识别操作意图"}
+  │
+  ├─ 正常流程继续 ↓
+  │
+  ├─ ═══ 自动追加 data-fill ═══
+  │   ├─ 有design但没data-fill → 追加 data-fill
+  │   └─ 有component-swap/add但没data-fill → 追加 data-fill(_pendingTargetIds)
+  │
+  ├─ ═══ 重试数据填充检测 ═══
+  │   userMessage.match(/\[failedIds:([^\]]+)\]/)
+  │   → 提取retryIds → 注入data-fill的params.targetIds
+  │
+  ▼
+┌─────────────────────────────────────────────────────────┐
+│              顺序执行 skill 链                            │
+│                                                         │
+│  for each skillPlan in plan.skills:                     │
+│    │                                                    │
+│    ├─ 获取 skill = registry.get(skillPlan.skill)        │
+│    ├─ 构建 ctx = {themeContext, canvasState,             │
+│    │     actionLayer, userMessage, planParams,           │
+│    │     scene, onLog, imgUrl, signal, skipCurrentRef,   │
+│    │     analyzeCanvas}                                  │
+│    │                                                    │
+│    ├─ _pendingTargetIds处理:                             │
+│    │   从前面skill的result收集swappedIds/addedIds         │
+│    │   → 作为data-fill的targetIds                        │
+│    │   没收集到 → 跳过data-fill                           │
+│    │                                                    │
+│    ├─ 调用 skill.handler(ctx)                            │
+│    │                                                    │
+│    ├─ 收集结果: {skill, success, message,                │
+│    │     themeUpdates, diagnoseData, failedIds}          │
+│    │                                                    │
+│    ├─ success && themeUpdates → 更新themeCtx             │
+│    │                                                    │
+│    └─ success===false && result.abort → 终止后续执行     │
+└─────────────────────────────────────────────────────────┘
+  │
+  ▼
+返回: {success, text, steps, themeContext, intent, scene,
+       diagnoseData, failedFillIds}
+  │
+  ▼
+结果处理 [useAiChat.js L283-341]
+  │
+  ├─ 更新 agentSteps (running → done)
+  ├─ 保存 themeContext → savedThemeContext
+  ├─ 推入 agentConversationHistory
+  │
+  ├─ clarifyOptions处理:
+  │   intent==="clarify" → 显示澄清选项
+  │
+  ├─ diagnoseData处理:
+  │   有actions → 填充diagnoseSuggestions(一键修复面板)
+  │
+  ├─ failedFillIds处理:
+  │   有值 → 设置failedFillIds ref → 显示重试按钮
+  │
+  ├─ 构建displayContent → 更新list最后一个气泡
+  └─ lock = false
+
+
 ## 🎮 三维孪生引擎
 
 AI 智能体的"身体"——承载所有智能交互的三维场景引擎：
@@ -25,14 +154,19 @@ AI 智能体的"身体"——承载所有智能交互的三维场景引擎：
 | 能力 | 说明 |
 |:---|:---|
 | 双引擎渲染 | Three.js + Cesium.js，覆盖室内/室外/地球级场景 |
+| 二维组件与场景完美融合 | 任意的二维组件都能轻松融入三维场景中，CSS2D、CSS3D|
+| 单按钮、按钮组交互 | 通过单按钮和按钮组，轻松实现数字孪生复杂的场景交互设计 |
 | 模型编辑器 | 内置轻量级编辑器，导入即编辑 |
-| 机器人巡检 | 第一/三人称漫游，碰撞检测，多角色 |
-| 着色器特效 | 自定义 Shader，发光/波纹/火焰/管道流动 |
+| 工业元宇宙 | 第一/三人称漫游，碰撞检测，多角色，角色靠近触发场景事件，实现工业元宇宙 |
+| 着色器特效 | 集成60+独立场景和模型材质着色器，发光/波纹/火焰/管道流动/城市扫描等等一键应用 |
 | 后处理 | 辉光/亮度/对比度/赛博朋克预设 |
+| 材质替换 | 材质快选快换，支持金属度光泽度、透明度 |
 | 环境预设 | 日出/夜景/工业风一键切换 |
 | 远程遥控 | API 控制相机/模型/动画，手机端操控大屏 |
-
+| 环境预设 | 日出/夜景/工业风一键切换 |
+| 场景API开放 | 场景功能可以通过API毫秒级调用触发，为对接外部智能体对接提供简单的控制方案 |
 ---
+
 
 ---
 
@@ -46,7 +180,7 @@ AI 智能体的"身体"——承载所有智能交互的三维场景引擎：
 
 壹孪的 AI 不是"锦上添花"，而是整个平台的中枢神经。AI 智能体通过标准化接口与数字孪生场景深度耦合，实现从感知、理解到决策、执行的完整闭环。
 
-### 智能体模式
+### Vosk语音引擎+智能体模式
 
 AI 智能体通过自然语言理解用户意图，自动转换为标准化的场景控制指令并执行：
 
@@ -92,13 +226,20 @@ AI 根据业务规则自动触发多对象联动，实现真正的"智能孪生"
 - **异常告警可视化** — 风险分级，自动聚焦异常点、高亮显示、弹出告警
 - **动态视角切换** — 根据事件类型自动切换最佳观察视角
 
+### 控制调试界面
+
+具备清晰明朗的API控制调试工具，轻松完成调试
+
+![预览8](public/image/new8.png)
+![预览9](public/image/new9.png)
+
 ### AI 能力矩阵
 
 | 能力 | 说明 |
 |:---|:---|
 | 🧠 **AI 智能体模式** | 自然语言 → 指令解析 → 场景控制，全链路自动化 |
 | 🔌 **场景 API 开放** | 标准化接口，支持对接任意外部智能体 |
-| 🎨 **AI 生成 3D 组件** | DeepSeek 大模型驱动，描述即生成 |
+| 🎨 **AI 生成 3D 组件** | 大模型驱动，描述即生成 |
 | 🎙️ **语音控制场景** | 语音指令驱动模型显隐、相机视角、动画播放 |
 | 🗺️ **智能巡检路径** | AI 自动规划巡检路线，第一/三人称漫游 |
 | � **场景联动控制** | AI 自动触发多对象联动，异常告警可视化 |
@@ -124,8 +265,7 @@ AI 根据业务规则自动触发多对象联动，实现真正的"智能孪生"
 ![预览5](public/image/new5.png)
 ![预览6](public/image/new6.png)
 ![预览7](public/image/new7.png)
-![预览8](public/image/new8.png)
-![预览9](public/image/new9.png)
+
 
 
 </details>
@@ -253,18 +393,11 @@ AI 根据业务规则自动触发多对象联动，实现真正的"智能孪生"
 
 ---
 
-## 🚀 开源说明
+## 🖼️ 版权归属
 
-本项目开源了**低代码编辑器的核心框架**，包含：
+<img src="public/image/ruanzhu2.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 
-- ✅ 完整的拖拽式画布编辑器
-- ✅ 示例拖拽组件
-- ✅ 组件联动 / 事件 / 动画体系
-- ✅ 本地数据持久化
-
-你可以基于此框架自行扩展更多组件，对接后端数据库即可构建完整项目。
-
-> 💡 完整商业版本包含更多组件、三维孪生引擎、**AI 智能体能力、场景 API 开放接口**、权限管理等。详见[官网](https://onetwin.cn)。
+<img src="public/image/banquan.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
 
 ---
 
@@ -320,15 +453,7 @@ npm run build
 
 </p>
 
----
 
-## 🖼️ 版权归属
-
-<img src="public/image/ruanzhu2.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
-
-<img src="public/image/banquan.png" alt="公众号" width="250" style="margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);" />
-
----
 
 <div align="center">
 
