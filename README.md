@@ -39,8 +39,8 @@
 
 AI智能体辅助设计，通过自然语言描述即可自动生成场景布局、推荐组件搭配，大幅降低设计门槛，提升搭建效率
 
-![预览8](public/image/new3.png)
-![预览9](public/image/new4.png)
+![预览8](public/image/AI.png)
+![预览9](public/image/AI2.png)
 
 
 Agent模式流程（核心）
