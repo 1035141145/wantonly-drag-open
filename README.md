@@ -44,6 +44,11 @@ AI智能体辅助设计，通过自然语言描述即可自动生成场景布局
 
 
 Agent模式流程（核心）
+> 📸 以下为真实项目截图，非设计稿
+
+<details>
+<summary><b>展开流程</b></summary>
+
 
 ```
 handleSubmitAgent(value, agentRefs)               [useAiChat.js L219]
@@ -148,6 +153,7 @@ runOrchestrator(userMessage, options)             [orchestrator.js]
   └─ lock = false
 ```
 
+</details>
 
 ## 🎮 三维孪生引擎
 
